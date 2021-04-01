@@ -1,18 +1,24 @@
 import React, { useContext, useEffect } from "react";
 import { DataContext } from "../DataProvider";
+import { toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
+
+toast.configure();
 function Button() {
   const value = useContext(DataContext);
   const [total] = value.total;
   const [cuzdan] = value.cuzdan;
 
+ 
+
   const satınAl = () => {
     console.log("total", total);
     console.log("cuzdan", cuzdan);
     if (total > cuzdan) {
-     return alert("Bakiyeniz yetersiz");
+     return  toast.error("Bakiyeniz yetersiz")
     } else if(cuzdan > total) {
-      return  alert("İşlem Başarılı")
+      return  toast.success("Satın Alma Başarılı")
     }
   };
 
