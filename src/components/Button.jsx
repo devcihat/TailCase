@@ -11,6 +11,8 @@ function Button() {
     console.log("cuzdan", cuzdan);
     if (total > cuzdan) {
       alert("Bakiyeniz yetersiz");
+    } else if(cuzdan > total) {
+        alert("İşlem Başarılı");
     }
   };
 
