@@ -10,9 +10,9 @@ function Button() {
     console.log("total", total);
     console.log("cuzdan", cuzdan);
     if (total > cuzdan) {
-      alert("Bakiyeniz yetersiz");
+     return alert("Bakiyeniz yetersiz");
     } else if(cuzdan > total) {
-        alert("İşlem Başarılı");
+      return  alert("İşlem Başarılı")
     }
   };
 
