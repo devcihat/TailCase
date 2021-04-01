@@ -42,7 +42,7 @@ export const DataProvider = (props) => {
   ]);
 
   const [cart, setCart] = useState([]);
-  const [cuzdan, setCuzdan] = useState(100);
+  const [cuzdan, setCuzdan] = useState(0);
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
