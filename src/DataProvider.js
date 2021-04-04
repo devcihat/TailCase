@@ -9,14 +9,14 @@ export const DataProvider = (props) => {
       title: "Product 1",
       img: "https://picsum.photos/200",
       desc: "Product desc",
-      price: 40,
+      price: 10.01,
     },
     {
       id: "2",
       title: "Product 2",
       img: "https://picsum.photos/200",
       desc: "Product desc",
-      price: 90,
+      price: 10.05,
     },
     {
       id: "3",
@@ -48,7 +48,7 @@ export const DataProvider = (props) => {
   useEffect(() => {
     const getTotal = () => {
       const response = cart.reduce((prev, item) => {
-        return prev +  item.price;
+        return (prev * 10 +  item.price * 10) / 10;
       }, 0);
       setTotal(response);
     };

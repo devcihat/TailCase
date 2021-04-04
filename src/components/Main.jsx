@@ -10,7 +10,7 @@ function Main() {
 
   const addMoney = () => {
     const newCuzdan = prompt("Lütfen Ekleyeceğiniz Miktarı Girin");
-    let _cuzdan = Number(cuzdan) + Number(newCuzdan)
+    let _cuzdan = (Number(cuzdan) * 10 + Number(newCuzdan) * 10) /10
     setCuzdan(_cuzdan) 
   }
 

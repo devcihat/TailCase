@@ -17,7 +17,7 @@ function Button() {
     console.log("cuzdan", cuzdan);
     if (total > cuzdan) {
      return  toast.error("Bakiyeniz yetersiz")
-    } else if(cuzdan > total) {
+    } else if(cuzdan >= total) {
       return  toast.success("Satın Alma Başarılı")
     }
   };
